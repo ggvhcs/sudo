@@ -1,0 +1,33 @@
+# add a new user with sudo group.
+
+# looking if exist the users.
+cat /etc/passwd |grep soad
+cat /etc/passwd |grep administrator
+cat /etc/passwd |grep dav
+
+# add the new users
+adduser soad   --->    working.
+
+# add the new users to sudo group.
+adduser soad sudo   --->    working.
+
+OR
+
+usermod -aG sudo soad
+
+cat /etc/sudoers
+---
+# User privilege specification
+root	ALL=(ALL:ALL) ALL
+soad	ALL=(ALL:ALL) ALL
+---
+
+groups soad
+---
+soad:soad sudo
+---
+
+# SUDO RESTRICTIONS.
+
+
+
