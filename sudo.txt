@@ -3,7 +3,6 @@
 # looking if exist the users.
 cat /etc/passwd |grep soad
 cat /etc/passwd |grep administrator
-cat /etc/passwd |grep dav
 
 # add the new users
 adduser soad   --->    working.
@@ -28,6 +27,4 @@ soad:soad sudo
 ---
 
 # SUDO RESTRICTIONS.
-
-
 
